@@ -299,11 +299,13 @@ tick-rates:
   behavior:
     villager:
       validatenearbypoi: -1
-  container-update: 1
-  grass-spread: 1
-  mob-spawner: 1
+  container-update: 2
+  dry-farmland: 3
+  grass-spread: 4
+  mob-spawner: 3
   sensor:
     villager:
       secondarypoisensor: 40
+  wet-farmland: 1
 unsupported-settings:
   fix-invulnerable-end-crystal-exploit: true
