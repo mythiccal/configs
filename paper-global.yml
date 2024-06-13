@@ -29,7 +29,7 @@ chunk-loading-basic:
 chunk-system:
   gen-parallelism: default
   io-threads: -1
-  worker-threads: -1
+  worker-threads: 4
 collisions:
   enable-player-collisions: true
   send-full-pos-for-hard-colliding-entities: true
@@ -101,11 +101,7 @@ scoreboards:
   save-empty-scoreboard-teams: false
   track-plugin-scoreboards: false
 spam-limiter:
-  incoming-packet-threshold: 300
-  recipe-spam-increment: 1
-  recipe-spam-limit: 20
-  tab-spam-increment: 1
-  tab-spam-limit: 500
+ #these have changed but you dont need to worry about it
 timings:
   enabled: false
   hidden-config-entries:
