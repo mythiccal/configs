@@ -10,6 +10,8 @@
 
 verbose: false
 settings:
+  register-minecraft-debug-commands: false
+  bee-count-payload: false
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
     afk-broadcast-away: <yellow><italic>%s is now AFK
@@ -185,7 +187,7 @@ settings:
     minecraft:black_bed:
       distance: 0.5
   use-alternate-keepalive: true
-config-version: 33
+config-version: 34
 world-settings:
   default:
     mobs:
@@ -804,6 +806,7 @@ world-settings:
         feed-wither-roses: 0
         bow-accuracy: 14 - difficulty * 4
       skeleton_horse:
+        ridable: false
         ridable-in-water: true
         can-swim: false
         attributes:
@@ -950,12 +953,16 @@ world-settings:
         always-drop-exp: false
         minimum-demand: 0
         lobotomize:
+          wait-until-trade-locked: false
           enabled: false
           check-interval: 100
         display-trade-item: true
         spawn-iron-golem:
           radius: 0
           limit: 0
+        search-radius:
+          acquire-poi: 20
+          nearest-bed-sensor: 20
       vindicator:
         ridable: false
         ridable-in-water: true
@@ -1034,6 +1041,7 @@ world-settings:
         always-drop-exp: false
         head-visibility-percent: 0.5
       zombie_horse:
+        ridable: false
         ridable-in-water: false
         can-swim: false
         attributes:
@@ -1344,6 +1352,66 @@ world-settings:
           minecraft:waxed_oxidized_cut_copper_stairs:
             into: minecraft:oxidized_cut_copper_stairs
             drops: {}
+          minecraft:waxed_chiseled_copper:
+            into: minecraft:chiseled_copper
+            drops: {}
+          minecraft:waxed_exposed_chiseled_copper:
+            into: minecraft:exposed_chiseled_copper
+            drops: {}
+          minecraft:waxed_weathered_chiseled_copper:
+            into: minecraft:weathered_chiseled_copper
+            drops: {}
+          minecraft:waxed_oxidized_chiseled_copper:
+            into: minecraft:oxidized_chiseled_copper
+            drops: {}
+          minecraft:waxed_copper_door:
+            into: minecraft:copper_door
+            drops: {}
+          minecraft:waxed_exposed_copper_door:
+            into: minecraft:exposed_copper_door
+            drops: {}
+          minecraft:waxed_weathered_copper_door:
+            into: minecraft:weathered_copper_door
+            drops: {}
+          minecraft:waxed_oxidized_copper_door:
+            into: minecraft:oxidized_copper_door
+            drops: {}
+          minecraft:waxed_copper_trapdoor:
+            into: minecraft:copper_trapdoor
+            drops: {}
+          minecraft:waxed_exposed_copper_trapdoor:
+            into: minecraft:exposed_copper_trapdoor
+            drops: {}
+          minecraft:waxed_weathered_copper_trapdoor:
+            into: minecraft:weathered_copper_trapdoor
+            drops: {}
+          minecraft:waxed_oxidized_copper_trapdoor:
+            into: minecraft:oxidized_copper_trapdoor
+            drops: {}
+          minecraft:waxed_copper_grate:
+            into: minecraft:copper_grate
+            drops: {}
+          minecraft:waxed_exposed_copper_grate:
+            into: minecraft:exposed_copper_grate
+            drops: {}
+          minecraft:waxed_weathered_copper_grate:
+            into: minecraft:weathered_copper_grate
+            drops: {}
+          minecraft:waxed_oxidized_copper_grate:
+            into: minecraft:oxidized_copper_grate
+            drops: {}
+          minecraft:waxed_copper_bulb:
+            into: minecraft:copper_bulb
+            drops: {}
+          minecraft:waxed_exposed_copper_bulb:
+            into: minecraft:exposed_copper_bulb
+            drops: {}
+          minecraft:waxed_weathered_copper_bulb:
+            into: minecraft:weathered_copper_bulb
+            drops: {}
+          minecraft:waxed_oxidized_copper_bulb:
+            into: minecraft:oxidized_copper_bulb
+            drops: {}
         weatherables:
           minecraft:oxidized_cut_copper_slab:
             into: minecraft:weathered_cut_copper_slab
@@ -1380,6 +1448,51 @@ world-settings:
             drops: {}
           minecraft:weathered_cut_copper_slab:
             into: minecraft:exposed_cut_copper_slab
+            drops: {}
+          minecraft:exposed_chiseled_copper:
+            into: minecraft:chiseled_copper
+            drops: {}
+          minecraft:weathered_chiseled_copper:
+            into: minecraft:exposed_chiseled_copper
+            drops: {}
+          minecraft:oxidized_chiseled_copper:
+            into: minecraft:weathered_chiseled_copper
+            drops: {}
+          minecraft:exposed_copper_door:
+            into: minecraft:copper_door
+            drops: {}
+          minecraft:weathered_copper_door:
+            into: minecraft:exposed_copper_door
+            drops: {}
+          minecraft:oxidized_copper_door:
+            into: minecraft:weathered_copper_door
+            drops: {}
+          minecraft:exposed_copper_trapdoor:
+            into: minecraft:copper_trapdoor
+            drops: {}
+          minecraft:weathered_copper_trapdoor:
+            into: minecraft:exposed_copper_trapdoor
+            drops: {}
+          minecraft:oxidized_copper_trapdoor:
+            into: minecraft:weathered_copper_trapdoor
+            drops: {}
+          minecraft:exposed_copper_grate:
+            into: minecraft:copper_grate
+            drops: {}
+          minecraft:weathered_copper_grate:
+            into: minecraft:exposed_copper_grate
+            drops: {}
+          minecraft:oxidized_copper_grate:
+            into: minecraft:weathered_copper_grate
+            drops: {}
+          minecraft:exposed_copper_bulb:
+            into: minecraft:copper_bulb
+            drops: {}
+          minecraft:weathered_copper_bulb:
+            into: minecraft:exposed_copper_bulb
+            drops: {}
+          minecraft:oxidized_copper_bulb:
+            into: minecraft:weathered_copper_bulb
             drops: {}
       hoe:
         tillables:
