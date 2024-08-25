@@ -186,7 +186,7 @@ entities:
     - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: default
-    non-player-arrow-despawn-rate: default
+    non-player-arrow-despawn-rate: 600
     per-player-mob-spawns: true
     scan-for-legacy-ender-dragon: true
     skeleton-horse-thunder-spawn-chance: default
