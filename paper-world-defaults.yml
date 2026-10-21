@@ -16,7 +16,7 @@
 _version: 31
 anticheat:
   anti-xray:
-    #redacted
+  #redacted
   obfuscation:
     items:
       hide-durability: false
@@ -43,11 +43,14 @@ chunks:
     small_fireball: 8
     snowball: 8
     spectral_arrow: 16
+    tnt: 1000
     trident: 16
     wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 12
+  min-chunk-unload-count: 50
+  min-chunk-unload-fraction: 0.05
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
